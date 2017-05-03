@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Symlink /app to /var/www/"
+exit 0
