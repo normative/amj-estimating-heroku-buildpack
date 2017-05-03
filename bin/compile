@@ -12,5 +12,5 @@ indent() {
 echo "-----> Configure /app directories & symlink /app to web root"
 
 mkdir -p $BUILD_DIR/var/www
-ln -sf /app /var/www/app.amjcampbell.com
+ln -sf /app /var/www/amjcampbell.com
 ln -sf /app /var/www/amj
