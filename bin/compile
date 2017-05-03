@@ -9,8 +9,8 @@ indent() {
   sed -u 's/^/       /'
 }
 
-echo "-----> Configure /app directories & symlink /app to web root " + $BUILD_DIR
+echo "-----> Configure /app directories & symlink /app to web root"
 
-# mkdir -p /var/www
-ln -sf /var/www/app.amjcampbell.com /app
-ln -sf /var/www/amj /app
+mkdir -p $BUILD_DIR/var/www
+ln -sf /var/www/app.amjcampbell.com $BUILD_DIR/app/web
+ln -sf /var/www/amj $BUILD_DIR/app/web
